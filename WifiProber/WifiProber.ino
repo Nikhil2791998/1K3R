@@ -21,7 +21,7 @@ void setup() {
   DigiKeyboard.print("cmd");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  DigiKeyboard.print("MODE CON: COLS=15 LINES=1");
+  DigiKeyboard.print("MODE CON: COLS=15 LINES=5");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
   DigiKeyboard.print("COLOR EF");
@@ -37,7 +37,7 @@ void setup() {
   DigiKeyboard.print("cmd");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  DigiKeyboard.print("MODE CON: COLS=15 LINES=1");
+  DigiKeyboard.print("MODE CON: COLS=15 LINES=5");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
   DigiKeyboard.print("COLOR EF");
@@ -63,7 +63,7 @@ void setup() {
   DigiKeyboard.print("cmd");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  DigiKeyboard.print("MODE CON: COLS=15 LINES=1");
+  DigiKeyboard.print("MODE CON: COLS=15 LINES=5");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
   DigiKeyboard.print("COLOR EF");
@@ -77,7 +77,7 @@ void setup() {
   DigiKeyboard.print("cmd");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  DigiKeyboard.print("MODE CON: COLS=15 LINES=1");
+  DigiKeyboard.print("MODE CON: COLS=15 LINES=5");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
   DigiKeyboard.print("COLOR EF");
